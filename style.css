@@ -1,0 +1,112 @@
+body{
+    padding: 0;
+    background-color: #000000;
+    color: white;
+    display: grid;
+    font-size: 25px;
+    margin-top: 20px;
+    /* place-items: center; */
+    justify-content: center;
+}
+/* .main{
+    display: grid;
+} */
+
+.converter{
+    background-color: #000000;
+    /* background-image: linear-gradient(#94ffdf,#00d4fa,#0cd7e6); */
+    box-sizing:border-box;
+    border: 2px solid #ffffff;
+    box-shadow:2px 2px 2px #8a7171;
+    /* height: 200px; */
+    padding:45px ;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1em;
+    /* overflow: hidden; */
+}
+.con1,.con2{
+    border: 2px solid white;
+    text-align: center;
+    box-shadow:-2px -2px 3px #565a58;
+    display: grid;
+    /* gap: 1em; */
+    & input{
+        box-sizing: border-box;
+        margin: auto;
+        color: #82f7b3;
+        color: #fcf7af;
+        background-color: #000000;
+        text-align: center;
+        font-size: 32px;
+        width: 100%;
+        /* user-select: all; */
+    }
+}
+select{
+text-align: center;
+color: #ffffff;
+background-color: #383646;
+width: 100%;
+font-size: 22px;
+border: none;
+
+}
+.icons{
+   display: flex;
+   justify-content: space-evenly;
+   margin-bottom: 1%;
+   border: 3px double white;
+   box-shadow:1px 1px 3px #f7cbcb;
+
+   padding:10px 10px 10px 30px;
+   /* padding-left: 35px; */
+
+    & h2{
+        color: aqua;
+        font-style: italic;
+    }
+
+}
+.therm-icon {
+    font-size: 100px;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        
+}
+.footer{
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    font-size: 20px;
+    padding: 1%;
+    padding-left: 0%;
+}
+
+    @media screen and (max-width:800px){
+        .converter{
+            height: auto;
+            padding:40px ;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 100vw));    
+        }
+        .con1,.con2{
+            & input{
+                font-size: large;
+                font-size: 30px;
+            }
+        }
+        .footer{
+    
+            font-size: 15px;
+            padding: 10px 0px;
+        }
+        .icons{
+            padding-left: 20px;
+        }
+        
+    }
+
+    

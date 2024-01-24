@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Title_icon  -->
+    <link rel="icon" class="icon" href="./Images/D-IMG-.jpg" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Temperature Converter</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="icons">
+        <h2 class="heading">Temperature Converter</h2>
+
+        <div class="therm-icon" id="therm-icon"></div>
+      </div>
+
+      <form
+        action=""
+        onformchange="convert_1()"
+        onformchange="convert_2()"
+        ;
+        return
+        false
+      >
+        <span class="converter">
+          <div class="con1">
+            <input
+              type="number"
+              name="temp"
+              value="0"
+              id="input_temp_1"
+              class=""
+              oninput="convert_1()"
+              placeholder="Enter temperature"
+            />
+            <!-- onfocus="this.select()" -->
+
+            <!-- <label for="temp_c" id="lab1">Temperature in °C</label> -->
+            <!-- <div class="select-temp" id="select-temp-1"></div> -->
+            <select name="select-temp" id="opt-1" onchange="convert_1()">
+              <option value="Celsius">Celsius (°C)</option>
+              <option value="Fahrenheit">Fahrenheit (°F)</option>
+              <option value="Kelvin">Kelvin (K)</option>
+            </select>
+          </div>
+
+          <div class="con2">
+            <!-- oninput="degF_to_C()" -->
+            <input
+              type="number"
+              name="temp"
+              value="32"
+              ;
+              id="input_temp_2"
+              oninput="convert_2()"
+              placeholder="Enter temperature"
+            />
+            <!-- onfocus="this.select()" -->
+
+            <!-- <label for="temp_f" id="lab2">Temperature in °F</label> -->
+            <!-- <div class="select-temp" id="select-temp-2"></div> -->
+            <select name="select-temp" id="opt-2" onchange="convert_1()">
+              <option value="Fahrenheit">Fahrenheit (°F)</option>
+              <option value="Celsius">Celsius (°C)</option>
+              <option value="Kelvin">Kelvin (K)</option>
+            </select>
+          </div>
+        </span>
+      </form>
+    </div>
+    <footer class="footer">
+      <hr />
+      <span> Copyright &copy; 2023 | Devesh | @DevCodes </span>
+      <span id="foot-span">|</span> <span> All Rights Reserved</span>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
